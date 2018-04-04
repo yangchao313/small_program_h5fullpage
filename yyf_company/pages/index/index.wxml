@@ -1,0 +1,10 @@
+<view class="container container-fill">
+  <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
+    <view wx:for="{{slide}}" wx:key="{{index}}" class="section section01" style="background-image: url({{item.images}}); background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+      <text class="section-maintitle"bindtap="message"><text style='position:relative;top:14%;' >预约</text></text>
+      <text class="section-subtitle" bindtap="tel"><text style='position:relative;top:14%;'>电话</text></text>
+      <text class="section-title" bindtap="gomap" ><text style='position:relative;top:14%;'>导航</text></text>
+      <image src="../../resource/images/icon_up.png" class="arrow-up animate-bounce-down"></image>
+    </view>
+  </view>
+</view>

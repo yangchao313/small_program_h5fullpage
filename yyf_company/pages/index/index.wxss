@@ -1,0 +1,80 @@
+.container-fill {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-fullpage {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.section {
+  height: 100%;
+}
+
+.section-maintitle {
+  position: relative;
+  top: 70%;
+  right: 20rpx;
+  float: right;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #673212;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.section-subtitle {
+  position: relative;
+  top: 78%;
+  right: -58rpx;
+  float: right;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #679912;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  top: 86%;
+  right: -134rpx;
+  float: right;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #903212;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.active .section-maintitle, .active .section-subtitle {
+  animation: mymove 0.8s;
+}
+
+.arrow-up {
+  background: none;
+  height: 30rpx;
+  width: 50rpx;
+  position: relative;
+  left: 50%;
+  top: 92%;
+  margin-left: -12px;
+  z-index: 99;
+  animation: a 1s steps(12) infinite;
+}
+
+@keyframes a {
+25% {transform: translateY(10px);}
+ 50%, 100% {transform: translateY(0);}
+ 75% {transform: translateY(-10px);}
+}
